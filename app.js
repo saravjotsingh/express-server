@@ -11,8 +11,7 @@ app.get('/load', async (req, res) => {
     res.send({});
   })
 
-
-app.get('/read', (req, res) => {
+app.get('/', (req, res) => {
   res.send({"message": "Hi from server"})
 })
 
