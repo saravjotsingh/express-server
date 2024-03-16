@@ -12,8 +12,8 @@ phases:
   build:
     commands:
       - echo Running process started
-      - pm2 stop express-server
-      - pm2 start app.js --name express-server
+      # - pm2 stop express-server
+      # - pm2 start app.js --name express-server
   post_build:
     commands:
       - echo build process finished
