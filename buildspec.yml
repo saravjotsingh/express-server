@@ -1,0 +1,19 @@
+version: 0.2
+env:
+  variables:
+    APP_NAME: "express-app"
+phases:
+  install:
+    runtime-versions:
+      nodejs: 20
+    commands:
+      - echo install process started
+      - npm install
+  build:
+    commands:
+      - echo Running process started
+      - pm2 stop express-server
+      - pm2 start app.js --name express-server
+  post_build:
+    commands:
+      - echo build process finished
