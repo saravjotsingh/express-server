@@ -1,1 +1,1 @@
-/usr/bin/pm2 stop express-server
+# /usr/bin/pm2 stop express-server
