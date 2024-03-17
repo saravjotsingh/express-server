@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/express-server
+    destination: /home/ec2-user/express-server
 hooks:
     BeforeInstall:
     - location: scripts/before_install
