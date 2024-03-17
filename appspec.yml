@@ -4,6 +4,14 @@ files:
   - source: /
     destination: /home/ubuntu/express-server
 hooks:
+    BeforeInstall:
+    - location: scripts/before_install
+      timeout: 300
+      runas: ubuntu
+  AfterInstall:
+    - location: scripts/after_install
+      timeout: 300
+      runas: ubuntu
   ApplicationStart:
     - location: scripts/start_server
       timeout: 300
