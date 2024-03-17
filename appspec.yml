@@ -5,19 +5,19 @@ files:
     destination: /home/ec2-user/express-server
 hooks:
     BeforeInstall:
-    - location: scripts/before_install
+    - location: scripts/before_install.sh
       timeout: 300
       runas: ubuntu
     AfterInstall:
-    - location: scripts/after_install
+    - location: scripts/after_install.sh
       timeout: 300
       runas: ubuntu
     ApplicationStart:
-    - location: scripts/start_server
+    - location: scripts/start_server.sh
       timeout: 300
       runas: root
     ApplicationStop:
-    - location: scripts/stop_server
+    - location: scripts/stop_server.sh
       timeout: 300
       runas: root
 file_exists_behavior: OVERWRITE
