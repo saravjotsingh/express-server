@@ -1,3 +1,4 @@
 #!/bin/bash
 cd /home/ubuntu/express-server
-pm2 start app.js --name express-sever
+/usr/bin/pm2 delete express-sever
+/usr/bin/pm2 start app.js --name express-sever
