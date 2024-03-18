@@ -1,4 +1,4 @@
 #!/bin/bash
-mkdir /home/ec2-user/express-server
-cd /home/ec2-user/express-server
+mkdir /home/ubuntu/express-server
+cd /home/ubuntu/express-server
 sudo npm install

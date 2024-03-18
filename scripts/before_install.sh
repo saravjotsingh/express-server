@@ -1,11 +1,10 @@
 #!/bin/bash
 # Install node.js and PM2 globally
-# sudo yum update
-# echo 'Installing nodejs'
-# sudo yum install nodejs-legacy -y
-# echo 'Installing npm'
-# sudo yum install npm  -y
-# echo 'Installing pm2'
-# sudo npm install pm2 -g
-echo 'hi'
-whoami
+echo 'installing curl'
+sudo apt install curl -y
+echo 'Installing nodejs'
+sudo curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+echo 'moving bash'
+sudo source ~/.bashrc
+sudo nvm install --lts
+nvm use 20
