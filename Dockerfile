@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 node:18-alpine
+FROM node:20-alpine3.21
 
 WORKDIR /express-server
 
