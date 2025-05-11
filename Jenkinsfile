@@ -6,12 +6,6 @@ pipeline {
     }
 
     stages {
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/saravjotsingh/express-server.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 script {
