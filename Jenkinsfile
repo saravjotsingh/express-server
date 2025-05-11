@@ -27,5 +27,15 @@ pipeline {
                 }
             }
         }
+
+        stage('Run Docker Container') {
+            steps {
+                sh '''
+                    docker stop express-server || true
+                    docker rm express-server || true
+                    docker run -d -p 3000:3000 --name express-server $DOCKER_IMAGE
+                '''
+            }
+        }
     }
 }
