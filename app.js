@@ -12,7 +12,7 @@ app.get('/load', async (req, res) => {
   })
 
 app.get('/', (req, res) => {
-  res.send({"message": "Hi from server"})
+  res.send({"message": "Hi from server 2.0"})
 })
 
 app.listen(port, () => {
